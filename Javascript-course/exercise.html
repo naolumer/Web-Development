@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+</head>
+<body>
+
+    <button onclick="cartQuantity= cartQuantity +=4;
+                    console.log(`cart quantity: ${cartQuantity}`);">
+        add to cart+4
+    </button>
+    <button onclick="cartQuantity= cartQuantity +=5;
+                    console.log(`cart quantitity: ${cartQuantity}`);">
+        add to cart+5
+    </button>
+    <button onclick="cartQuantity-=1;
+                    console.log(`cart quantitity: ${cartQuantity}`);">
+        remove from cart
+    </button>
+    <script>
+        let cartQuantity= 0;
+
+        let name='Naol';
+        console.log(name);
+        let costOfFood= 2*3 +5 +9
+        console.log(`cost of food is: $${costOfFood}`)
+
+        let tax= costOfFood*0.1
+        console.log(`Tax(10%): $${tax}`)
+
+        let totalCost= tax + costOfFood
+        console.log(`Total cost is: $${totalCost}`)
+        
+
+    </script>
+</body>
+</html>
