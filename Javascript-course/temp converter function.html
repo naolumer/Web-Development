@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Converter</title>
+</head>
+<body>
+    <script>
+        
+        function tempConverter(temp, unit) {
+            if (unit=='C') {
+                let celsiusDegree= (temp - 32) * (5/9);
+                return celsiusDegree + 'C'
+            } else if (unit=='F') {
+                let fahrenheitDegree= (temp* (9/5) + 32)
+                return fahrenheitDegree + 'F'
+            }
+        }
+
+        console.log(tempConverter(32, 'F'))
+            
+    </script>
+</body>
+</html>
