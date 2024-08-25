@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin flip game(head or tails)</title>
+</head>
+<body>
+    <p>
+        Welcome to Head or tails game!
+    </p>
+
+    <script>
+        let randomNum= Math.random();
+        let computerSelection= '';
+
+        if (randomNum>=0.5 && randomNum<1) {
+            computerSelection= 'Tails';
+            console.log(computerSelection)
+        } else if (randomNum>=0 && randomNum<0.5) {
+            computerSelection="Heads";
+            console.log(computerSelection)
+        }
+        let userGuess = 'Heads'
+        let result= '';
+        if (userGuess==computerSelection) {
+            result="You won!";
+            alert(`You selected ${userGuess} and the result is ${computerSelection}. ${result}`)
+        } else {
+            result= "You lose";
+            alert(`You selected ${userGuess} and the result is ${computerSelection}. ${result}`)
+        }
+
+        /*userGuess==computerSelection ? console.log("you won") : console.log("you lose")*/
+
+    </script>
+</body>
+</html>
