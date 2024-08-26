@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises on Objects</title>
+</head>
+<body>
+    <button onclick="
+    playGame('Heads')">heads
+    </button>
+
+    <button onclick="
+    playGame('Tails')">tails
+        
+    </button>
+    <script>
+
+    function playGame(guess) {
+
+        let score = JSON.parse(localStorage.getItem('score'))
+
+        if (score===null) {
+            score={
+                wins:0,
+                losses:0
+            }
+        }
+        let userGuess = guess;
+        let computerSelection= '';
+        let result= '';
+        let randomNum= Math.random();
+
+
+        
+            
+        if (randomNum>=0.5 && randomNum<1) {
+            computerSelection= 'Tails';
+            console.log(computerSelection)
+        } else if (randomNum>=0 && randomNum<0.5) {
+            computerSelection='Heads';
+            console.log(computerSelection)
+        }
+        
+        
+        if (userGuess==computerSelection) {
+            result='You won!';
+            score.wins+=1
+            alert(`You selected ${userGuess} and the result is ${computerSelection}. ${result}
+wins:${score.wins}. losses:${score.losses}`)
+        } else {
+            result= 'You lose';
+            score.losses+=1
+            alert(`You selected ${userGuess} and the result is ${computerSelection}. ${result}
+wins:${score.wins}. losses:${score.losses}`)
+            }
+            localStorage.setItem('score', JSON.stringify(score));
+            
+        }
+
+
+        
+    </script>
+    
+    <script>
+        /*const basketBallProduct= {
+            name: 'basketball',
+            price: 2095,
+            ['delivery-time']: '3 days'
+
+        }
+
+        console.log(basketBallProduct.name)
+        console.log(basketBallProduct.price)
+
+        basketBallProduct.price+=500
+        console.log(basketBallProduct.price)
+        console.log(basketBallProduct['delivery-time'])
+
+        let result='';
+
+        function compareTwoProducts(product1, product2) {
+            if (product1.price >= product2.price) {
+                result= product2.name;
+            } else {
+                result= product1.name;
+
+            }
+            return result
+        }
+
+        const glass = {
+            name: 'pillow',
+            price: 340
+        }
+        const pillow ={
+            name: 'pillow',
+            price: 340
+        }
+
+        console.log(compareTwoProducts(glass, pillow))
+
+        function isSameProduct(product1,product2) {
+            if (product1.name===product2.name && product1.price===product2.price) {
+                return true
+            } else {
+                return false
+            }
+        }
+        console.log(isSameProduct(pillow,glass))
+
+        // repeat method in javascript
+        let name= 'Naol';
+        let repeatedName= name.repeat(5);
+        console.log(repeatedName)  */
+    </script>
