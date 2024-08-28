@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML,CSS,JAVASCRIPT Exercises.</title>
+
+    <style>
+        .amazon-button {
+            background-color: rgb(255, 216, 20);
+            color: black;
+            padding: 20px 50px;
+            border-radius: 50px;
+            border: 0px;
+            font-size: 30px;
+            margin-right: 300px;
+
+        }
+
+        .request-uber {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            border: 0px;
+            font-size: 30px;
+            padding: 20px 50px;
+            margin: 20px;
+            
+
+        }
+
+        .uber-schedule {
+            background-color:rgb(230,230,230) ;
+            color: black;
+            border-radius: 10px;
+            border: 0px;
+            font-size: 30px;
+            padding:20px 50px ;
+            font-weight: 400;
+            font-family: Arial;
+            margin-right: 200px;
+        }
+
+        .off {
+            background-color: rgb(230,230,230);
+            color: black;
+            font-size: 30px;
+            border-radius: 10px;
+            padding: 20px 50px;
+            border: 0px;
+            margin-right: 300px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+            cursor: pointer;
+        }
+
+        
+        .is-toggled {
+            background-color: black;
+            color: rgb(230,230,230);
+            font-size: 30px;
+            border-radius: 10px;
+            padding: 20px 50px;
+            border: 0px;
+            margin-right: 300px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+
+    <button class="amazon-button">
+        Add to Cart
+    </button>
+
+    <button class="request-uber">
+        Request now
+    </button>
+
+    <button class="uber-schedule">
+        Schedule for later
+    </button>
+    
+    <button class="off gaming" onclick="turnOffandOn('.gaming')">
+        Gaming
+    </button>
+
+    <button class="off music" onclick="turnOffandOn('.music')">
+        Music
+    </button>
+
+    <button class="off videos" onclick="turnOffandOn('.videos')">
+        Video
+    </button>
+    
+    <button class="js-has-class">
+        Test
+    </button>
+
+    <script>
+        
+        let jsButton = document.querySelector(".js-has-class");
+        console.log(jsButton.classList.contains('js-has-class'))
+
+        
+        function turnOffandOn(selector) {
+            let gamingButton = document.querySelector(selector);
+
+            if (!gamingButton.classList.contains('is-toggled')) {
+                
+                turnOffpreviousButton();
+                
+                gamingButton.classList.add('is-toggled');
+            }  else {
+                gamingButton.classList.remove('is-toggled')
+            }
+        }
+
+        function turnOffpreviousButton() {
+            const previousButton = document.querySelector('.is-toggled');
+
+            if (previousButton) {
+                previousButton.classList.remove('is-toggled')
+            }
+        }
+
+
+</script>
+</body>
+</html>

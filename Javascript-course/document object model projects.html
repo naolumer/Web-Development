@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Projects.</title>
+</head>
+<body>
+    <p>Youtube Subscribe Button</p>
+    <button onclick="
+    
+    Subscribe();
+    ">
+        Subscribe
+    </button>
+
+    <script>
+        function Subscribe() {
+            let buttonElement= document.querySelector('button');
+    
+            let innerText = buttonElement.innerText;
+            
+            if (innerText==='Subscribe') {
+            buttonElement.innerHTML= 'Subscribed';}
+        
+            else {
+            buttonElement.innerHTML= 'Subscribe';}
+        }
+    </script>
+
+    <button class="heads" onclick="headsTails('heads')">
+        heads
+    </button >
+
+    <button class="tails" onclick="headsTails('tails')">
+        tails
+    </button>
+    <p class="selection"></p>
+
+    <script>
+        function headsTails (select) {
+        
+            let resultParagraph = document.querySelector('.selection');
+
+            if (select==='heads') {
+                resultParagraph.innerHTML= 'You picked heads!';
+            } else if (select==='tails') {
+                resultParagraph.innerHTML= 'You picked tails!';
+            }
+        }
+</script>
+
+<input type="" placeholder="Name" onkeydown=" if (event.key==='Enter') {
+    nameDisplayer();}" class="inputName">
+
+<button onclick="nameDisplayer()">Submit</button>
+
+<p class="displayText"></p>
+
+<script>
+    
+    function nameDisplayer() {
+        
+        let inputbar = document.querySelector('.inputName');
+        let Namee= inputbar.value;
+        
+        document.querySelector('.displayText').innerHTML= `Your name is : ${Namee}`
+        }
+
+</script>
+
+
+
+    
+</body>
+</html>
