@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises on Loops and Arrays</title>
+</head>
+<body>
+    <script>
+        let fruits = ['apple', 'banana', 'cherry', 'date','banana', 'elderberry'];
+
+        for (let i=0;i<fruits.length; i++) {
+            if (fruits[i]==='banana') {
+                console.log(i);
+                break;
+            } else {
+                console.log(-1)
+            }
+        }
+
+        function findIndex(array, word) {
+            for (i=0; i< array.length; i++) {
+                if (array[i]===word) {
+                    return i;
+            }
+        }
+            return -1;
+            
+        }
+
+
+        function removeEgg(foods) {
+            const newFoods = [];
+            for (i=0; i< foods.length; i++) {
+                if (foods[i]==='egg') {
+                    continue;
+
+                } else {
+                    newFoods.push(foods[i]);
+                }
+            }
+            return newFoods}
+        
+        /*FizzBuzz Game*/
+
+        function fizzBuzz(num) {
+            let answer = '';
+            for (i=0; i<num; i++) {
+                if (i%3===0 && i%5===0) {
+                    console.log('FizzBuzz');
+
+                } else if (i%5===0) {
+                    console.log('Buzz');
+                } else if (i%3===0) {
+                    console.log('Fizz');
+                }
+            }
+        }
+
+        </script>
+</body>
+</html>
