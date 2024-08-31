@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+</head>
+<body>
+    <style>
+        .start-button,
+        .add-button {
+            border-radius: 10px;
+            background-color: antiquewhite;
+            color: black;
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+    
+    <button class="start-button" onclick="
+            changeButtonText();
+            ">
+        Start
+    </button>
+
+    <button class="add-button" onclick="renderRemove();">
+        Add to Cart
+    </button>
+
+    <div class="message-div"></div>
+    
+    <script>
+        const add = function () {
+            console.log(2*6);
+        }
+
+        add();
+        add();
+
+        function runtwice(fun) {
+            fun();
+            fun();
+        }
+
+        runtwice(function() {
+            console.log(45);
+        })
+
+        runtwice(add);
+
+        function changeButtonText() {
+            const startButton = document.querySelector('.start-button');
+            startButton.innerText='Loading...';
+            setTimeout(function() {
+                startButton.innerText='Finished';
+            }, 2000)
+        }
+        
+        let timeoutId;
+        
+        function renderRemove() {
+
+            const ddiv= document.querySelector('.message-div');
+            
+            ddiv.innerHTML= 'Added';
+            clearTimeout(timeoutId);
+            
+            
+            timeoutId= setTimeout(function() {
+                ddiv.innerHTML="";
+            }, 3000)
+        }
+    </script>
+</body>
+</html>
