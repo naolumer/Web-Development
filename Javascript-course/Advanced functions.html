@@ -71,6 +71,52 @@
                 ddiv.innerHTML="";
             }, 3000)
         }
+
+        const multiply= (num1,num2) => num1 * num2;
+        console.log(multiply(8,6));
+
+        function countPositive(nums) {
+            
+            let positiveNumbers=0;
+            nums.forEach((num) => {
+                if (num > 0) {
+                    positiveNumbers++;
+                }
+            })
+            return positiveNumbers;
+        }
+
+        function addNum(array,num) {
+            return array.map((value) => {
+            return value + num});
+        }
+
+        console.log(addNum([2,3,4,5,6], 5));
+
+        function removeEggs(foods) {
+            return foods.filter((food) =>{
+            if (food!=='eggs') {
+                return true;
+            } else {
+                return false;
+            }
+            } );
+        }
+
+        function removeEggtwo(foods) {
+            let eggsRemoved = 0;
+
+            return foods.filter((food) => {
+                if (food==='eggs' && eggsRemoved<3) {
+                    eggsRemoved++;
+                    return false;
+                }  
+                
+            return true});
+        }
+
+
+        console.log(removeEggtwo(['banana','orange','bread','onion','eggs', 'eggs','eggs']));
     </script>
 </body>
 </html>
