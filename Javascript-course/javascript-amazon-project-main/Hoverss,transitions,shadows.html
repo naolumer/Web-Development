@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hovers, Transitions, Shadows</title>
+
+</head>
+<body>
+
+    <style>
+        .uber-button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 25px;
+            cursor: pointer;
+                
+        }
+
+        .uber-button:hover {
+            background-color: rgb(40, 39, 39);
+        }
+        .amazon-button {
+            background-color: rgb(234, 192, 55);
+            color: black;
+            border: none;
+            padding: 12px 58px;
+            font-size: 20px;
+            border-radius: 30px;
+            
+        }
+        .amazon-button:hover {
+            background-color: rgb(254, 211, 118);
+        }
+        .github-button {
+            background-color: rgb(36, 141, 50);
+            color: white;
+            border: none;
+            padding: 15px 23px;
+            font-size: 25px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .github-button:hover {
+            background-color: rgb(58, 157, 106);
+            transition: 0.2s;
+            box-shadow: 5px 5px 10px black;
+        }
+
+    
+
+    </style>
+    <p>Uber</p>
+    <button class="uber-button">
+        Request now
+    </button>
+    <br>
+    
+    <p>Amazon</p>
+    <button class="amazon-button">
+        Add to cart
+    </button>
+    <br>
+
+    <p>Bootstrap</p>
+    <button class="bootstrap-button">
+        Get started
+</button>
+    <button>
+        Download
+    </button>
+
+    <p>Github</p>
+    <button class="github-button">
+        Sign up
+    </button>
+
+</body>
+</html>
