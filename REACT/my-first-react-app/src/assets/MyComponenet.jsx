@@ -1,3 +1,6 @@
+//  onChange = event handler used primarily with form elements
+// i.e <input>, <textarea>, <select>, <radio> including but not limited to
+//  triggers a function every time the value of the input changes
 import React, {useState} from "react";
 
 function MyComponent() {
@@ -17,7 +20,21 @@ function MyComponent() {
         setIsEmployed(!isEmployed);
     }
 
+    
+    const [quantity, setQuantity] = useState();
+
+
+    function handleNameChange(event) {
+        setName(event.target.value);
+    }
+
+    function handleQuantityChange(event){
+        setQuantity(event.target.value);
+
+    }
+
     return(
+        <>
         <div>
             <p>Name: {name}</p>
             <button onClick = {updateName}>Set Name</button>
@@ -28,8 +45,8 @@ function MyComponent() {
             <p>Is employed: {isEmployed ? "Yes" : "No"}</p>
             <button onClick = {toggleEmployedStatus}> Toggle Status</button>
 
-
         </div>
+        </>
     );
 }
 
