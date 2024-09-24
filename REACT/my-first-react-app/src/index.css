@@ -4,7 +4,7 @@ body {
 
 .counter-container {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .count-display {
@@ -91,7 +91,7 @@ li {
   padding: 15px;
   background-color: hsl(0,0%,97%);
   margin-bottom: 10px;
-  border: 3px solid hslla(0,0%,85%, 0.75);
+  border: 3px solid hsla(0,0%,85%, 0.75);
   border-radius: 5px;
   display: flex;
   align-items: center;
