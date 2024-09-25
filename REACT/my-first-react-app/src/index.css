@@ -1,6 +1,16 @@
 body {
-  background-color: hsl(0,0%,10%);
-}
+  background-image: url(assets/background-clock.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin:0;
+
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+} 
 
 .counter-container {
   text-align: center;
@@ -105,4 +115,21 @@ li {
   padding: 8px 12px;
   font-size: 1.4rem ;
   margin-left: 10px;
+}
+
+.clock-container {
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  padding: 10px 0;
+
+
+}
+
+.clock{
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px hsla(0, 0%,0%, 0.75);
 }
