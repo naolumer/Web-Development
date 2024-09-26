@@ -1,16 +1,4 @@
-body {
-  background-image: url(assets/background-clock.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin:0;
 
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  align-items: center;
-} 
 
 .counter-container {
   text-align: center;
@@ -49,7 +37,7 @@ h1{
   color: white
 }
 
-button {
+/* button {
   font-size: 1.7rem;
   font-weight: bold;
   padding: 10px 20px;
@@ -58,7 +46,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.5s ease;
-}
+} */
 
 .add-button {
   background-color: hsl(125,47%,54%);
@@ -133,3 +121,70 @@ li {
   text-align: center;
   text-shadow: 3px 3px 5px hsla(0, 0%,0%, 0.75);
 }
+
+body {
+  display: flex;
+  flex-direction: coluumn;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%) ;
+
+}
+
+.stopwatch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid;
+  border-radius: 50px;
+  background-color: white;
+  padding: 30px;
+
+}
+
+
+.display {
+  font-size: 5rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: hsl(0,0%,30%);
+  text-shadow: 2px 2px 2px hsla(0,0%,0%,0.75);
+}
+
+.controls button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.start-button {
+  background-color: rgb(8, 175, 8);
+
+}
+
+.start-button:hover {
+  background-color: rgb(1, 69, 1);
+}
+
+.stop-button {
+  background-color: rgb(241, 78, 78);
+}
+
+.stop-button:hover {
+  background-color: rgb(109, 46, 46);
+}
+
+.reset-button {
+  background-color: rgb(81, 195, 240);
+}
+
+.reset-button:hover{
+  background-color: rgb(7, 112, 153);
+}
+
