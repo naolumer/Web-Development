@@ -1,29 +1,15 @@
-import { useState } from "react"
-import Todo from "./Todo.jsx";
+import Form from "./Form.jsx";
+import ListItem from "./ListItem.jsx";
+import { useState } from "react";
+
 export default function Todos() {
-
-    const [todo, setTodo] = useState("");
     const [todos, setTodos] = useState([]);
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        setTodos([...todos, todo]);
-        setTodo("");
-    
-    }
 
     return (
         <div>
-            <form onSubmit={(e) => handleSubmit(e)}>
-                <input type="text" value = {todo} onChange={(e) => setTodo(e.target.value)} />
-                <button type="submit">
-                    Add
-                </button>
-            </form>
+            <Form  todos = {todos} setTodos = {setTodos}/>
 
-            {todos.map((item) => (
-                <Todo key = {item} item={item} />
-            ))}
+            <ListItem  todos = {todos} setTodos= {setTodos}/>
 
         </div>
     )

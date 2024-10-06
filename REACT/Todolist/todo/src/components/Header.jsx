@@ -6,7 +6,7 @@ export default function Header () {
     
     return (
         <h1 className= {styles.header}>
-            My todo List
+            My Todo List
           
         </h1>
     )
