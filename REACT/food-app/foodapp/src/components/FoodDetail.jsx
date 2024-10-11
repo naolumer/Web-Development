@@ -41,7 +41,7 @@ export default function FoodDetails({foodId}) {
                 <div>
                     $<span>{Math.floor(food.pricePerServing)} Per serving</span>
                 </div>
-                
+            
                 <h2>Instructions</h2>
                 <div className={styles.recipeInstructions}>
                     <ol>
