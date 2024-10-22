@@ -1,8 +1,9 @@
 .play-video {
     flex-basis: 69%
 }
-.play-video video {
+.play-video iframe {
     width: 100%;
+    height: 37vw;
 }
 
 .play-video h3 {
@@ -58,8 +59,11 @@
     font-size:18px ;
 }
 .publisher div span {
+    display: inline-block;
     font-size: 13px;
     color: #5a5a5a;
+    padding-top: 2px;
+    
 }
 .publisher button {
     background: red;
