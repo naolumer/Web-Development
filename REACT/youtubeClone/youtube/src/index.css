@@ -12,6 +12,7 @@ a{
 
 img {
     cursor: pointer;
+    border-radius: 2px;
 }
 
 .flex-div {

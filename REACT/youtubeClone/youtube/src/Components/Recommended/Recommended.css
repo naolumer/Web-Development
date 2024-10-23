@@ -21,6 +21,12 @@
     margin-bottom:5px ;
 }
 .vid-info p {
-    font-size: 12px;
+    font-size: 13px;
     padding-top: 2px;
+}
+
+@media (max-width:900px) {
+    .recommended {
+        flex-basis: 100%;
+    }
 }

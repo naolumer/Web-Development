@@ -10,9 +10,12 @@ import user_profile from '../../assets/user_profile.jpg'
 import { API_KEY } from '../../data'
 import { valueConverter } from '../../data'
 import moment from 'moment'
+import { useParams } from 'react-router-dom'
 
 
-function PlayVideo({videoId}) {
+function PlayVideo() {
+
+    const {videoId}  = useParams();
     const [apiData,setApiData] = useState(null);
     const [channelData, setChannelData] = useState(null);
     const [commentsData, setCommentsData] = useState([]);
@@ -35,7 +38,7 @@ function PlayVideo({videoId}) {
 
     useEffect(()=>{
         fetchVideoData()
-    },[]);
+    },[videoId]);
 
     useEffect(()=>{
         fetchOtherData()
@@ -83,11 +86,10 @@ function PlayVideo({videoId}) {
                     <img src={item.snippet.topLevelComment.snippet.authorProfileImageUrl} alt="" />
                     <div>
                         <h3>{item.snippet.topLevelComment.snippet.authorDisplayName}</h3>
-                        <p>A gloabl computer network providing commercial and of interconnected networks 
-                            absolutely stupendous using standerdized communication protocols</p>
+                        <p>{item.snippet.topLevelComment.snippet.textDisplay}</p>
                         <div className='comment-action'>
                             <img src={like} alt="" />
-                            <span>244</span>
+                            <span>{valueConverter(item.snippet.topLevelComment.snippet.likeCount)}</span>
                             <img src={dislike} alt="" />
                         </div>
                     </div>
