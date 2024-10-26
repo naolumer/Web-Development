@@ -81,3 +81,13 @@
     font-weight: 500;
     cursor: pointer;
 }
+.spinner-animation{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner-animation img{
+    width: 60px;
+}
