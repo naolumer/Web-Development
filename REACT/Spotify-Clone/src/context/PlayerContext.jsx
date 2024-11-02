@@ -1,5 +1,6 @@
-import { createContext, useEffect, useRef, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { songsData } from "../assets/assets";
+import { useRef } from "react";
 
 export const PlayerContext = createContext();
 const PlayerContextProvider = (props) => {
@@ -16,7 +17,8 @@ const PlayerContextProvider = (props) => {
         },
         totalTime: {
             second:0,
-            minute:0
+            minute:0,
+        
         }
     })
 
