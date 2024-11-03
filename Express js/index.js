@@ -1,11 +1,11 @@
 import express from "express";
-import students from './routes/student.js'
-import teachers from './routes/teachers.js'
+// import students from './routes/student.js'
+// import teachers from './routes/teachers.js'
 
 const app = express();
 
-app.use('/students',students)
-app.use('/teachers',teachers)
+// app.use('/students',students)
+// app.use('/teachers',teachers)
 
 // HTTP REQUEST METHODS
 // GET => Retrieve Data
@@ -88,4 +88,20 @@ app.use('/teachers',teachers)
 //     .post((req,res)=>{res.send("add student")})
 //     .put((req,res)=>{res.send("update student")})
 
-app.listen(8000,()=>console.log("Server Up!"))
+// Route Params
+// app.get("/products/iphone/:model/:build", (req,res)=>{
+//     const {model,build} = req.params;
+//     res.send(`Iphone ${model} Pro Max with ${build} build`)
+// })
+
+app.param("id",(req,res,next,id)=>{
+    console.log(`id:${id}`)
+    next()
+})
+app.get('/user/:id',(req,res)=> {
+    console.log("this is user id path");
+    res.send("response is ok!")
+})
+
+app.listen(3000,()=>console.log("Server Up!"))
+
