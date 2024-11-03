@@ -1,10 +1,10 @@
 import express from "express";
-// import students from './routes/student.js'
+import students from './routes/student.js'
 // import teachers from './routes/teachers.js'
 
 const app = express();
 
-// app.use('/students',students)
+app.use('/students',students)
 // app.use('/teachers',teachers)
 
 // HTTP REQUEST METHODS
@@ -94,14 +94,14 @@ const app = express();
 //     res.send(`Iphone ${model} Pro Max with ${build} build`)
 // })
 
-app.param("id",(req,res,next,id)=>{
-    console.log(`id:${id}`)
-    next()
-})
-app.get('/user/:id',(req,res)=> {
-    console.log("this is user id path");
-    res.send("response is ok!")
-})
+// app.param("id",(req,res,next,id)=>{
+//     console.log(`id:${id}`)
+//     next()
+// })
+// app.get('/user/:id',(req,res)=> {
+//     console.log("this is user id path");
+//     res.send("response is ok!")
+// })
 
-app.listen(3000,()=>console.log("Server Up!"))
+app.listen(2000,()=>console.log("Server Up!"))
 
