@@ -1,6 +1,11 @@
 import express from "express";
+import students from './routes/student.js'
+import teachers from './routes/teachers.js'
 
 const app = express();
+
+app.use('/students',students)
+app.use('/teachers',teachers)
 
 // HTTP REQUEST METHODS
 // GET => Retrieve Data
@@ -77,10 +82,10 @@ const app = express();
 
 // 👇Refactorod Code
 
-app
-    .route('/student')
-    .get((req,res)=>res.send("All students"))
-    .post((req,res)=>{res.send("add student")})
-    .put((req,res)=>{res.send("update student")})
+// app
+//     .route('/student')
+//     .get((req,res)=>res.send("All students"))
+//     .post((req,res)=>{res.send("add student")})
+//     .put((req,res)=>{res.send("update student")})
 
 app.listen(8000,()=>console.log("Server Up!"))
