@@ -1,10 +1,11 @@
 import express from "express";
 import students from './routes/student.js'
 // import teachers from './routes/teachers.js'
+import userCredentials from "./middlewares/logs.js";
 
 const app = express();
 
-app.use('/students',students)
+// app.use('/students',students)
 // app.use('/teachers',teachers)
 
 // HTTP REQUEST METHODS
@@ -103,5 +104,13 @@ app.use('/students',students)
 //     res.send("response is ok!")
 // })
 
-app.listen(2000,()=>console.log("Server Up!"))
+// Express middleware's
+
+
+// app.get('/', userCredentials,(req,res)=>{
+//     res.send('<h1>Helo admin</h1>')
+// })
+
+// we can also use app.use(userCredentials) with app.get('/',(req,res)=>{} for any routes that exist)
+app.listen(5000,()=>console.log("Server Up!"))
 
