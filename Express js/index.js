@@ -1,9 +1,16 @@
 import express from "express";
-import students from './routes/student.js'
+// import students from './routes/student.js'
 // import teachers from './routes/teachers.js'
-import userCredentials from "./middlewares/logs.js";
+// import userCredentials from "./middlewares/logs.js";
 
-const app = express();
+// Serving statice files in express
+// import path from 'path'
+// const app = express();
+
+// app.use(express.static('./public'));
+// app.get('/', (req,res)=>{
+//     res.sendFile(path.join(process.cwd(),'./public/index.html'))
+// })
 
 // app.use('/students',students)
 // app.use('/teachers',teachers)
