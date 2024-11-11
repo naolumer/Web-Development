@@ -119,5 +119,9 @@ import express from "express";
 // })
 
 // we can also use app.use(userCredentials) with app.get('/',(req,res)=>{} for any routes that exist)
+
+app.set('view engine',"ejs")
+app.use(express.static(join(process.cwd(), 'public')))
+
 app.listen(5000,()=>console.log("Server Up!"))
 
