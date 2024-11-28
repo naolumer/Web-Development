@@ -18,6 +18,9 @@ import { UserProvider } from './components/UserContext'
 import UpdateUser from './components/UpdateUser'
 import Login from './components/Login'
 import LoginContext from './components/LoginContext'
+import ThemeProvider from './components/ThemeContext'
+import Theme1 from './components/Theme1'
+import Theme3 from './components/Theme3'
 
 
 
@@ -25,7 +28,7 @@ import LoginContext from './components/LoginContext'
 
 function App() {
   return (
-    <div>
+    <div >
       {/* <InlineStyle/>
       <ObjectStyle/>
       <IconComponent/> */}
@@ -41,9 +44,12 @@ function App() {
         <UserProfile/>
         <UpdateUser/>
       </UserProvider> */}
-      <LoginContext>
+      {/* <LoginContext>
         <Login/>
-      </LoginContext>
+      </LoginContext> */}
+      {/* <ThemeProvider>
+        <Theme1/>
+      </ThemeProvider> */}
       
 
 
