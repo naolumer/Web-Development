@@ -16,6 +16,10 @@ import ShoppingList from './components/ShoppingList'
 import UserProfile from './components/UserProfile'
 import { UserProvider } from './components/UserContext'
 import UpdateUser from './components/UpdateUser'
+import Login from './components/Login'
+import LoginContext from './components/LoginContext'
+
+
 
 
 
@@ -33,10 +37,13 @@ function App() {
       {/* <TodoList/> */}
       {/* <Profile/> */}
       {/* <ShoppingList/> */}
-      <UserProvider>
+      {/* <UserProvider>
         <UserProfile/>
         <UpdateUser/>
-      </UserProvider>
+      </UserProvider> */}
+      <LoginContext>
+        <Login/>
+      </LoginContext>
       
 
 
