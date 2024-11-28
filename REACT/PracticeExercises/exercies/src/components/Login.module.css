@@ -4,6 +4,9 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 200px;
+    border: 1px solid gray;
+    padding: 20px 5px;
+    background-color: skyblue;
 }
 .form input {
     padding: 10px 20px;
@@ -37,4 +40,6 @@
 .form button {
     padding: 10px 20px;
     margin-top: 20px;
+    background-color: black;
+    color: white;
 }
