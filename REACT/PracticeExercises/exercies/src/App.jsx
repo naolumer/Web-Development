@@ -20,7 +20,7 @@ import Login from './components/Login'
 import LoginContext from './components/LoginContext'
 import ThemeProvider from './components/ThemeContext'
 import Theme1 from './components/Theme1'
-import Theme3 from './components/Theme3'
+import Main from './components/Main'
 
 
 
@@ -50,6 +50,7 @@ function App() {
       {/* <ThemeProvider>
         <Theme1/>
       </ThemeProvider> */}
+      <Main/>
       
 
 
