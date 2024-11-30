@@ -21,6 +21,7 @@ import LoginContext from './components/LoginContext'
 import ThemeProvider from './components/ThemeContext'
 import Theme1 from './components/Theme1'
 import Main from './components/Main'
+import Todo from './components/Todo'
 
 
 
@@ -50,7 +51,8 @@ function App() {
       {/* <ThemeProvider>
         <Theme1/>
       </ThemeProvider> */}
-      <Main/>
+      {/* <Main/> */}
+      <Todo/>
       
 
 
