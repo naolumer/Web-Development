@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(36, 36, 36);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+
+
+
+.container {
+  width: 40%;
+  margin-top: 130px;
+  margin-left: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.title-container {
+  background-color: rgb(88, 88, 88);
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  border-radius: 3px;
+}
+.content-container {
+  padding: 20px;
+  line-height: 1.5rem;
+  color: white;
+  border-radius: 3px;
+  background-color: rgb(87, 87, 87);
+}
+
+
