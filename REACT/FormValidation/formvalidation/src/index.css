@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right,rgb(234, 130, 130) 10%, white 70%);
+  height: 100vh;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input {
+  padding: 12px 50px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 1px;
+  border-bottom: 2px solid gray;
+}
+button {
+  padding: 10px 108px;
+  background-color: rgb(212, 63, 37);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+p {
+  font-size: 12px;
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
