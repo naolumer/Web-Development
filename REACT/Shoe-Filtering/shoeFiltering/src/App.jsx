@@ -6,9 +6,10 @@ import Products from './Products/Products'
 function App() {
   return (
     <div>
-      <Nav/>
-      <Products/>
-      <Recommended/>
+    <Nav/>
+    <Recommended/>   
+    <Products/>
+     
 
     </div>
   )
