@@ -8,13 +8,12 @@ import Card from './components/Card'
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null)
+  const[query, setQuery] = useState("")
 
   //------------------ input filter----------
  
-  const[query, setQuery] = useState("")
-
   const handleInputChange = (e)=>{
-    setQuery(e.target.value)``
+    setQuery(e.target.value)
   }
   const filteredItems = products.filter(product => 
     product.title.toLocaleLowerCase().includes(query.toLocaleLowerCase())
@@ -67,7 +66,7 @@ function App() {
     <div>
     <Sidebar handleChange={handleChange}/>
     <Nav  query={query} handleInputChange={handleInputChange}/>
-    <Recommended handleChange={handleClick}/>   
+    <Recommended handleClick={handleClick}/>   
     <Products result={result}/>
     
      
