@@ -24,7 +24,7 @@ const MyProvider:FC<MyProviderProps> = ({children})=> {
         setCount(count +1)
     }
     const decrement = ()=> {
-        setCount(count +1)
+        setCount(count -1)
     }
     return (
         <MyContext.Provider value={{count,increment,decrement}}>

@@ -3,6 +3,7 @@ import ContactForm from "./ContactForm"
 import Counter from "./Counter"
 import FocusInput from "./FocusInput"
 import Form from "./Form"
+import Reducer from "./Reducer"
 import User from "./User"
 import UserProfile from "./UserProfile"
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       {/* <FocusInput/> */}
       <ContactForm/>
       <Counter/>
+      <Reducer/>
       
     
     </div>
