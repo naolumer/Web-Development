@@ -4,6 +4,7 @@ import Counter from "./Counter"
 import FocusInput from "./FocusInput"
 import Form from "./Form"
 import Reducer from "./Reducer"
+import UseEffectTypes from "./UseEffectTypes"
 import User from "./User"
 import UserProfile from "./UserProfile"
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <ContactForm/>
       <Counter/>
       <Reducer/>
+      <UseEffectTypes/>
       
     
     </div>
