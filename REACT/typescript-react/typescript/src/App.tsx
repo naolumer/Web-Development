@@ -1,5 +1,6 @@
 import Admin from "./Admin"
 import ContactForm from "./ContactForm"
+import Counter from "./Counter"
 import FocusInput from "./FocusInput"
 import Form from "./Form"
 import User from "./User"
@@ -13,6 +14,7 @@ const App = () => {
       <Form/> */}
       {/* <FocusInput/> */}
       <ContactForm/>
+      <Counter/>
       
     
     </div>
