@@ -1,0 +1,58 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(210, 199, 199);
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+   font-size: xx-large; 
+   font-weight: bold;
+}
+
+button {
+    background-color: hsl(271, 58%, 60%);
+    color: white;
+    font-weight: bold;
+    padding: 16px 85px;
+    border-radius: 3px;
+    border: none;
+    margin: auto;
+    font-size: large;
+    max-width: 600px;
+    
+}
+button:hover {
+    background-color: hsl(271, 88%, 60%);
+
+}
+
+select {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    max-width: 100px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+
+
+.result-container {
+    display: flex;
+    gap: 5px;
+    margin-top: 50px;
+    margin: auto;
+}
+#result {
+    background: hsl(0, 70%, 65%);
+    color: white;
+    border-radius: 3px;
+    padding:5px
+}
