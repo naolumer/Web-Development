@@ -10,7 +10,7 @@ h1 {
     margin: auto;
     text-align: center;
     margin-top: 50px;
-    width: fit-content;
+    max-width: 60% ;
 }
 button {
     padding: 12px 25px;
@@ -44,7 +44,9 @@ p {
     font-weight: bold;
 }
 #imgdiv {
+    
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
     padding: 20px;
 }
