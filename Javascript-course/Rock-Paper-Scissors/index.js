@@ -14,8 +14,8 @@ let computerscore = 0
 const playGame = (playerchoice)=>{
     const randomIndex = Math.floor(Math.random()*3)
     const compchoice = randomList[randomIndex]
-    computerChoice.textContent = compchoice
-    playerChoice.textContent = playerchoice
+    computerChoice.textContent = `Computer chooses: ${compchoice}`
+    playerChoice.textContent = `Player chooses: ${playerchoice}`
 
     if (playerchoice===compchoice) {
         resultelement.textContent = "IT'S A TIE!"
@@ -38,13 +38,13 @@ const playGame = (playerchoice)=>{
     }
     if (resultelement.textContent==="YOU WIN !") {
         playerscore++
-        playerScore.textContent = playerscore
+        playerScore.textContent = `Player score : ${playerscore}`
         playerScore.classList.add("greenColor")
         resultelement.classList.remove("redColor","greenColor")
         resultelement.classList.toggle("greenColor")
     } else if (resultelement.textContent==="YOU LOSE"){
         computerscore++
-        computerScore.textContent = computerscore
+        computerScore.textContent = `Computer score : ${computerscore}`
         computerScore.classList.add("redColor")
         resultelement.classList.remove("redColor","greenColor")
         resultelement.classList.toggle("redColor")
