@@ -9,20 +9,19 @@
 <body>
     <div class="container">
         <h1 id="title">Rock - Paper - Scissors</h1>
-        <div class="buttons" id="playerChoice">
-            <button class="playGame('rock')">✊</button>
-            <button class="playGame('paper')">🤚</button>
-            <button class="playGame('scissors')">✌️</button>
+        <div class="buttons">
+            <button onclick= "playGame('rock')">✊</button>
+            <button onclick= "playGame('paper')">🤚</button>
+            <button onclick= "playGame('scissors')">✌️</button>
         <div id="choices">
-            <p id="playerchoice">Player: </p>
-            <p id="computerchoice">Computer: </p>
+            <p id="playerchoice">Player chooses: </p>
+            <p id="computerchoice">Computer chooses: </p>
         </div>
          <h1 id="result">IT'S A TIE</h1>
          <div id="scores">
-            <p>Player Score: </p>
-            <p>Computer Score: </p>
+            <p id="playerscore">Player Score: </p>
+            <p id="computerscore">Computer Score: </p>
          </div>
-
         </div>
 
     </div>
