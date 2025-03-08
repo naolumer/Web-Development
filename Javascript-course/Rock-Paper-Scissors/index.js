@@ -39,12 +39,15 @@ const playGame = (playerchoice)=>{
     if (resultelement.textContent==="YOU WIN !") {
         playerscore++
         playerScore.textContent = playerscore
+        playerScore.classList.add("greenColor")
         resultelement.classList.remove("redColor","greenColor")
         resultelement.classList.toggle("greenColor")
     } else if (resultelement.textContent==="YOU LOSE"){
         computerscore++
         computerScore.textContent = computerscore
+        computerScore.classList.add("redColor")
         resultelement.classList.remove("redColor","greenColor")
         resultelement.classList.toggle("redColor")
+        
     } 
 }
