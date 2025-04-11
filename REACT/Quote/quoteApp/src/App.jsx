@@ -35,12 +35,15 @@ function App() {
   return (
     <div className="container">
       <h1 className='title'>QUOTES</h1>
-      <h1 className='quote'><em>{quotes[currentIndex].quote}</em></h1>
-      <p className='author'>{quotes[currentIndex].author}</p>
-      <div className='button-container'>
-        <button className='prev' type='submit' onClick={handlePrev}>Prev</button>
-        <button className='next' type= "submit" onClick={handleNext}>Next</button>  
+      <div className='cont2'>
+          <h1 className='quote'><em>{quotes[currentIndex].quote}</em></h1>
+          <p className='author'>{quotes[currentIndex].author}</p>
+          <div className='button-container'>
+          <button className='prev' type='submit' onClick={handlePrev}>Prev</button>
+          <button className='next' type= "submit" onClick={handleNext}>Next</button>  
       </div>
+      </div>
+    
       
     </div>
   )
