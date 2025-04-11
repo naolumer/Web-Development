@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './index.css'
 
 function App() {
@@ -88,9 +88,8 @@ function App() {
         value={confirmPassword}
         onChange={(e)=>setConfirmPassword(e.target.value)} />
         <p>{confirmPassError}</p>
-        
-        <button type='submit' onClick={validate}>Submit</button>
 
+        <button type='submit' onClick={validate}>Submit</button>
       </form>
     </div>
   )
