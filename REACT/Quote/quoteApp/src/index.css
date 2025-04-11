@@ -12,17 +12,17 @@
   background-color: bisque;
   box-shadow: 1px 1px 5px 6px gray;
   border-radius: 6px;
-  width: 50%;
-  padding: 20px;
-  margin-left: 350px;
-  height: 3%;
-  margin-top: 180px;
+  width: 80%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
 }
 
 button {
   padding: 8px 25px;
   background-color: rgb(243, 111, 59);
-  margin-right: 20px;
   text-align: center;
   border-radius: 8px;
   color: white;
@@ -39,11 +39,10 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   text-decoration: underline;
-  margin-bottom: 50px;
 }
 
 .button-container {
-  margin-left: 300px;
+  margin-left: 100px;
   margin-top: 10px;
 }
 .title {
