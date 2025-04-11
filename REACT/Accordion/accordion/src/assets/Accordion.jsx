@@ -13,7 +13,7 @@ function Accordion({title,content}) {
     <div className='container2'>
         <div className='title-container' onClick={handleClick}>
             <h3 className='title'>{title}</h3>
-            <p  className='icons'>{isActive? <IoIosArrowDropdown/>:"+"}</p>
+            <p  className='icons'>{isActive? <IoIosArrowDropdown/>:<IoIosArrowDropup/>}</p>
         </div>
         {isActive? 
         <div className='content-container'>
