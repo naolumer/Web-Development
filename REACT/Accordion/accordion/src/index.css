@@ -32,4 +32,9 @@ body {
   background-color: rgb(87, 87, 87);
 }
 
+.icons {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
 
